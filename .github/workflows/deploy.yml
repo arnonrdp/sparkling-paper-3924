@@ -1,4 +1,4 @@
-name: Publish to Cloudflare Workers
+name: Deploy to Cloudflare
 
 on:
   push:
@@ -18,9 +18,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      - name: Publish
+      - name: Deploy
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages publish --project-name=sparkling-paper-3924
+          command: pages deploy --project-name=sparkling-paper-3924
