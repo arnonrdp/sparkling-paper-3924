@@ -11,7 +11,8 @@
 export default {
   async fetch(request, env, ctx) {
     const data = {
-      name: 'Globe & Citizen'
+      name: 'Globe & Citizen',
+      products: ['Celebrity Fanalyzer', 'Layer 8', 'Crypto Tips', 'Globe & Citizen']
     }
     const jsonData = JSON.stringify(data)
 
