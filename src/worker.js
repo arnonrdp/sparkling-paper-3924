@@ -9,7 +9,16 @@
  */
 
 export default {
-	async fetch(request, env, ctx) {
-		return new Response('Hello Globe & Citizen!');
-	},
-};
+  async fetch(request, env, ctx) {
+    const data = {
+      name: 'Globe & Citizen'
+    }
+    const jsonData = JSON.stringify(data)
+
+    return new Response(jsonData, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+  }
+}
