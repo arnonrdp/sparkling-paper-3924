@@ -1,6 +1,8 @@
 {
+	"htmlWhitespaceSensitivity": "ignore",
 	"printWidth": 140,
+	"semi": false,
 	"singleQuote": true,
-	"semi": true,
-	"useTabs": true
+	"tabWidth": 2,
+	"trailingComma": "none"
 }
