@@ -10,3 +10,8 @@ Before using this template, follow these instructions:
 - Once created, you need to enter your Worker's name in the following files:
   - `.github/workflows/deploy.yml` (line 26);
   - `wrangler.toml` (line 1);
+- Update the following file with your Cloudflare account ID:
+  - `wrangler.toml` (line 4);
+- Add the following secrets to your repository:
+  - `CLOUDFLARE_API_TOKEN`: Create a token with the "Edit Cloudflare Workers" template;
+  - `CLOUDFLARE_ACCOUNT_ID`: Your Cloudflare account ID;
